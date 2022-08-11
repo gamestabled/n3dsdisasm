@@ -8,9 +8,9 @@ found_bls = set()
 found_pools = set()
 strings_to_replace = []
 
-bl_regex = re.compile(r"^\tbl sub_([0-9A-F]{8})")
+bl_regex = re.compile(r"^\tbl func_([0-9A-F]{8})")
 pool_num_regex = re.compile(r"^[^@]+@ =0x([0-9A-F]{8})")
-pool_func_regex = re.compile(r"^[^@]+@ =sub_([0-9A-F]{8})")
+pool_func_regex = re.compile(r"^[^@]+@ =func_([0-9A-F]{8})")
 
 class RegexFind:
     __slots__ = ("regex", "find")
@@ -19,7 +19,7 @@ class RegexFind:
         self.regex = regex
         self.find = find
 
-regex_finds = (RegexFind(bl_regex, "sub_{}"), RegexFind(pool_num_regex, "0x{}"), RegexFind(pool_func_regex, "sub_{}"))
+regex_finds = (RegexFind(bl_regex, "func_{}"), RegexFind(pool_num_regex, "0x{}"), RegexFind(pool_func_regex, "func_{}"))
 
 class AddrRange:
     __slots__ = ("start", "end")

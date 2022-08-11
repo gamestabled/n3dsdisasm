@@ -1,5 +1,5 @@
-CAPSTONE_ARCHIVE := capstone-3.0.5-rc2.tar.gz
-CAPSTONE_DIR := capstone-3.0.5-rc2
+CAPSTONE_ARCHIVE := capstone-4.0.2.tar.gz
+CAPSTONE_DIR := capstone-4.0.2
 CAPSTONE_LIB := $(CAPSTONE_DIR)/libcapstone.a
 
 DEBUG ?= 0
