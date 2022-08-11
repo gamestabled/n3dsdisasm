@@ -6,7 +6,7 @@
 
 #include <capstone/capstone.h>
 
-#include "gbadisasm.h"
+#include "n3dsdisasm.h"
 
 extern void fatal_error(const char *fmt, ...);
 

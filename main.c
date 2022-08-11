@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "gbadisasm.h"
+#include "n3dsdisasm.h"
 
 struct ConfigLabel
 {

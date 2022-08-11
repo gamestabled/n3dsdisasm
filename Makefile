@@ -11,7 +11,7 @@ CFLAGS += -O0 -g -fsanitize=address
 else
 CFLAGS += -O3
 endif
-PROGRAM := gbadisasm
+PROGRAM := n3dsdisasm
 SOURCES := main.c disasm.c
 LIBS := $(CAPSTONE_LIB)
 

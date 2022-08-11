@@ -1,12 +1,12 @@
-# GBADISASM
+# N3DSDISASM
 
-This is a simple disassembler for Game Boy Advance games.
+This is a simple disassembler for Nintendo 3DS games.
 
 ## Usage
 
-`gbadisasm rom_file -c config_file`
-where `rom_file` is the GBA rom to disassemble, and `config_file` is an optional config file that gives hints to the disassembler.
+`n3dsdisasm code_file -c config_file`
+where `code_file` is the code.bin file to disassemble, and `config_file` is an optional config file that gives hints to the disassembler.
 
 ## Config File
 
-The config file consists of a list of statements, one per line. Lines beginning with `#` are treated as comments. An config file `alttpafs.cfg` for The Legend of Zelda: A Link to the Past and Four Swords (U) is provided as an example.
+The config file consists of a list of statements, one per line. Lines beginning with `#` are treated as comments. An config file `rhm.cfg` for Rhythm Heaven Megamix (USA) is provided as an example.
