@@ -326,7 +326,7 @@ int main(int argc, char **argv)
     }
 
     if (romFileName == NULL)
-        fatal_error("no ROM file specified");
+        fatal_error("no code.bin file specified");
     read_input_file(romFileName);
     if (configFileName != NULL)
         read_config(configFileName);
